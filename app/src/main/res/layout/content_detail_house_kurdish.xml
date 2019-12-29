@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".KurdishLayout.DetailHouseKurdishActivity"
+    tools:showIn="@layout/app_bar_detail_house_kurdish">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/product_Scrollview">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ir.apend.slider.ui.Slider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:animateIndicators="true"
+                app:defaultIndicators="circle"
+                app:indicatorSize="8dp"
+                app:intervalSecond="5"
+                app:loopSlides="true" />
+
+
+            <TextView
+                android:id="@+id/txttitleamlak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="20dp"
+                android:textColor="@color/perpeltheme"/>
+
+            <TextView
+                android:id="@+id/txtdescriptionamlak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtpropertiamlak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تایبەتمەندی :"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="@color/perpeltheme"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="20dp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/property_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="زانیاری نووسینگە :"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="@color/perpeltheme"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtiusenameinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="20dp"/>
+
+            <TextView
+                android:id="@+id/txtemailinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="20dp"/>
+
+            <TextView
+                android:id="@+id/txtboardnameinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:layoutDirection="rtl"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="20dp"/>
+
+            <TextView
+                android:id="@+id/txttellinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:textColor="@color/perpeltheme"
+                android:text="موڵکی هاوبەش ..."
+                android:layout_gravity="right"
+                android:gravity="right"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mortabet_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

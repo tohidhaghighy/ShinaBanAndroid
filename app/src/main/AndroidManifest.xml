@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shinabandudkani">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ScrollingActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Search3Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Search2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".CitySelectorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".StateCityActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Search1Activity" />
+        <activity
+            android:name=".ArabicLayout.DetailHouseArabicActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ArabicLayout.ListEStateArabicActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ArabicLayout.MainArabicActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KurdishLayout.ListEStateKurdishActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KurdishLayout.DetailHouseKurdishActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KurdishLayout.MainKurdishActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailHouseActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListEStateActivity"
+            android:label="Shinaban"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CityActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

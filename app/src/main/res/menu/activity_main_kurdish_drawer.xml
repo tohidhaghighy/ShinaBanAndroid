@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="لاپەڕەی سەرەکی" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="دیارکردنی زمان" />
+        <item
+            android:id="@+id/nav_city"
+            android:icon="@drawable/ic_edit_location_black_24dp"
+            android:title="دیارکردنی شار" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="خروج" />
+    </group>
+
+    <item android:title="ناردن">
+        <menu>
+            <item
+                android:id="@+id/nav_share_insta"
+                android:icon="@drawable/ic_menu_share"
+                android:title="instagram" />
+            <item
+                android:id="@+id/nav_share_tele"
+                android:icon="@drawable/ic_menu_share"
+                android:title="telegram" />
+        </menu>
+    </item>
+
+</menu>
